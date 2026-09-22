@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhythm Game (Audio-Synced Edition)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <button id="auto-btn">AUTO: OFF (Tab)</button>
+        <canvas id="gameCanvas" width="900" height="720"></canvas>
+    </div>
+
+    <div class="instructions">
+        🎵 <b>音樂節奏遊戲 (音樂動態對拍版)</b><br>
+        [譜面模式] <b>CLASSIC Mode</b>: 固定譜面 | <b>CUSTOM MP3 Mode</b>: 實時分析 MP3 頻率節奏對拍生成<br>
+        [自動打擊] 按右上角按鈕或 <span class="key-badge">Tab</span> 切換 <span class="highlight">AUTO 模式</span><br>
+        [選單操作] <span class="highlight">↑ / ↓</span> 選擇 | <span class="highlight">← / →</span> 調整 | <span class="highlight">Space</span> 開始/繼續遊戲<br>
+        [打擊按鍵] <b>1P (左側/單人)</b>: <span class="key-badge">A S W D</span> 或 <span class="key-badge">← ↓ ↑ →</span> | <b>2P (右側)</b>: <span class="key-badge">← ↓ ↑ →</span><br>
+        [暫停功能] 遊戲中按 <span class="key-badge">Esc</span> / <span class="key-badge">P</span> 暫停 | 按 <span class="key-badge">R</span> 重新開始
+    </div>
+
+    <input type="file" id="audio-input" accept="audio/*" style="display: none;">
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
